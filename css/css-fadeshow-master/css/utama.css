@@ -1,0 +1,292 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #fff;
+    /* #26253a */
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+}
+
+.fadeShadow {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.slide-content p {
+    font-size: calc(1rem + 10 * (100vw - 375px)/ (1199 - 375));
+    font-weight: 100;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+h1,
+h2 {
+    margin-top: 0;
+    font-size: calc(2rem + 28 * (100vw - 375px)/ (1199 - 375));
+    margin-bottom: 0.2em;
+    font-weight: bold;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: black;
+}
+
+@media (min-width: 1200px) {
+
+    h1,
+    h2 {
+        font-size: 60px;
+    }
+
+    .slide-content p {
+        font-size: 26px;
+    }
+}
+
+/* SENDIRI */
+.sambutan {
+    color: black;
+    /* text-shadow: -2px -2px 13px rgba(255, 255, 255, 0.8); */
+    text-shadow: 5px 5px 5px white, -5px -5px 5px white
+}
+
+
+.waliKelas {
+    color: white;
+}
+
+.waliKelas p {
+    color: white;
+    text-align: left;
+}
+
+/* Mode HP (max-width: 768px) */
+@media (max-width: 768px) {
+
+    .waliKelas {
+        text-align: center;
+    }
+
+    .waliKelas p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+
+    #judulGuru {
+        font-size: 25px;
+    }
+}
+
+
+.textGelap {
+    color: #26253a;
+}
+
+.textGelap p {
+    color: #26253a;
+}
+
+#SolhMad:hover {
+    color: white;
+}
+
+/* SolhMad */
+#SolhMad {
+    color: #26253a;
+    /* Warna teks di mode laptop/desktop */
+}
+
+/* Mode HP (max-width: 768px) */
+@media (max-width: 768px) {
+    #SolhMad {
+        color: #fff;
+        /* Warna teks jadi putih di HP */
+    }
+
+    #SolhMad:hover {
+        color: #646464;
+    }
+}
+
+/* SolhMad END */
+
+#about {
+    background-color: #26253a;
+}
+
+/* svg */
+.custom-shape-divider-top-1741792637 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1741792637 svg {
+    position: relative;
+    display: block;
+    width: calc(142% + 1.3px);
+    height: 129px;
+}
+
+.custom-shape-divider-top-1741792637 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1741792637 svg {
+        width: calc(100% + 1.3px);
+        height: 70px;
+    }
+}
+
+/* svg end */
+
+#gallery {
+    background-color: #fff;
+}
+
+#gallery {
+    background-color: #26253a;
+}
+
+#catatan {
+    font-size: 25px;
+    /* Default untuk laptop/desktop */
+}
+
+#catatan {
+    font-size: clamp(16px, 2.5vw, 25px);
+}
+
+/* SKROL BAR */
+
+/* Custom Scrollbar untuk Chrome, Edge, dan Safari */
+::-webkit-scrollbar {
+    width: 8px;
+    /* Lebar scrollbar */
+    height: 8px;
+    /* Tinggi scrollbar (horizontal) */
+}
+
+/* Warna track (background scroll) */
+::-webkit-scrollbar-track {
+    background: #26253a;
+    /* Warna track */
+    border-radius: 10px;
+    /* Biar smooth */
+}
+
+/* Warna thumb (bagian yang bisa digeser) */
+::-webkit-scrollbar-thumb {
+    background: #848484;
+    /* Warna abu-abu elegan */
+    border-radius: 10px;
+    /* Biar rounded */
+}
+
+/* Hover efek */
+::-webkit-scrollbar-thumb:hover {
+    background: #6a6a6a;
+    /* Warna thumb sedikit lebih gelap saat dihover */
+}
+
+/* Untuk Firefox */
+* {
+    scrollbar-width: thin;
+    /* Ukuran tipis */
+    scrollbar-color: #848484 #26253a;
+    /* Thumb | Track */
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* SKROL BAR END */
+
+/* PUTER */
+#puter {
+    color: #26253a;
+    /* Warna teks di mode laptop/desktop */
+}
+
+/* Mode HP (max-width: 768px) */
+@media (max-width: 768px) {
+    #puter {
+        color: #fff;
+        /* Warna teks jadi putih di HP */
+    }
+}
+
+/* PUTER END */
+
+.tombol {
+    color: #fff !important;
+    background-color: #26253a !important;
+    border: 1px solid #777777 !important;
+    transition: all 0.2s ease-in !important;
+    padding: 10px 40px !important;
+    cursor: pointer !important;
+    border-radius: 100px !important;
+}
+
+.tombol:hover {
+    color: #26253a !important;
+    background-color: white !important;
+}
+
+.tombol.active {
+    color: #26253a !important;
+    background-color: white !important;
+}
+
+.okeh {
+    background-color: blue !important;
+    color: white !important;
+    padding: 10px 20px !important;
+    border: none !important;
+    cursor: pointer !important;
+    transition: 0.1s !important;
+}
+
+.okeh.active {
+    background-color: red !important;
+}
