@@ -525,6 +525,12 @@ main {
   padding: 30px;
 }
 
+@media (max-width: 576px) {
+
+  .owl-carousel-info {
+    padding: 10px;
+  }
+}
 .badge {
   background-color: var(--custom-btn-bg-color);
   font-family: var(--title-font-family);

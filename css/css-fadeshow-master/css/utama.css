@@ -278,15 +278,17 @@ html {
     background-color: white !important;
 }
 
-.okeh {
-    background-color: blue !important;
-    color: white !important;
-    padding: 10px 20px !important;
-    border: none !important;
-    cursor: pointer !important;
-    transition: 0.1s !important;
-}
+@media (max-width: 576px) {
 
-.okeh.active {
-    background-color: red !important;
+    /* Ukuran max 576px (HP) */
+    #h5 {
+        font-size: 14px;
+        /* Ukuran lebih kecil */
+    }
+
+        .owl-carousel-verified-image {
+            width: 14px;
+            /* Ukuran ikon lebih kecil */
+            height: auto;
+        }
 }
